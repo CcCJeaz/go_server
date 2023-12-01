@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  epoll_go:
+    image: golang
+    container_name: epoll_go
+    ports:
+      - "9999:9999"
+    volumes:
+      - "/Users/jeaz/Code/local_code/epoll_go:/app"
+    working_dir: /app
+    restart: always
+    init: true
+    tty: true
